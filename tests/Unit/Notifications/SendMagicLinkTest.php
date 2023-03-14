@@ -2,6 +2,8 @@
 
 declare(strict_types=1);
 
+namespace Tests\Unit\Notifications;
+
 use PreemStudio\MagicLinks\Notifications\SendMagicLink;
 
 beforeEach(fn () => $this->subject = new SendMagicLink(5));
