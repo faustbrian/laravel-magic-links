@@ -1,0 +1,16 @@
+parameters:
+	ignoreErrors:
+		-
+			message: "#^Method PreemStudio\\\\MagicLinks\\\\Http\\\\Controllers\\\\MagicLinkController\\:\\:__invoke\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: src/Http/Controllers/MagicLinkController.php
+
+		-
+			message: "#^Method PreemStudio\\\\MagicLinks\\\\Notifications\\\\SendMagicLink\\:\\:toMail\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: src/Notifications/SendMagicLink.php
+
+		-
+			message: "#^Method PreemStudio\\\\MagicLinks\\\\Notifications\\\\SendMagicLink\\:\\:via\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: src/Notifications/SendMagicLink.php
