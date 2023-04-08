@@ -25,7 +25,7 @@ final class SendMagicLink extends Notification
 
     public function toMail()
     {
-        return (new MailMessage)
+        return (new MailMessage())
             ->subject('Your magic link for '.config('app.name'))
             ->line('Here is your magic link. It will expire after 15 minutes.')
             ->line(URL::temporarySignedRoute('login.magic', now()->addMinutes(15), ['userId' => $this->userId]))
