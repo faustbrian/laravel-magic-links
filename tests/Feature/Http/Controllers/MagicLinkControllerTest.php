@@ -4,11 +4,11 @@ declare(strict_types=1);
 
 namespace Tests\Feature\Http\Controllers;
 
+use BombenProdukt\MagicLinks\Http\Controllers\MagicLinkController;
 use Carbon\Carbon;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\URL;
-use BombenProdukt\MagicLinks\Http\Controllers\MagicLinkController;
 
 it('should log in the user if the signature is valid', function (): void {
     Route::middleware('web')->get('/_test', MagicLinkController::class)->name('login.magic');
