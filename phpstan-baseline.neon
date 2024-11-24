@@ -1,0 +1,21 @@
+parameters:
+	ignoreErrors:
+		-
+			message: "#^Dynamic call to static method Illuminate\\\\Http\\\\Request\\:\\:hasValidSignature\\(\\)\\.$#"
+			count: 1
+			path: src/Http/Controllers/MagicLinkController.php
+
+		-
+			message: "#^Method BombenProdukt\\\\MagicLinks\\\\Http\\\\Controllers\\\\MagicLinkController\\:\\:__invoke\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: src/Http/Controllers/MagicLinkController.php
+
+		-
+			message: "#^Method BombenProdukt\\\\MagicLinks\\\\Notifications\\\\SendMagicLink\\:\\:toMail\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: src/Notifications/SendMagicLink.php
+
+		-
+			message: "#^Method BombenProdukt\\\\MagicLinks\\\\Notifications\\\\SendMagicLink\\:\\:via\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: src/Notifications/SendMagicLink.php
