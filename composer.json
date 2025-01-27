@@ -21,8 +21,8 @@
         "illuminate/contracts": "^11.0"
     },
     "require-dev": {
-        "basecodeoy/standards": "^1.0.5",
-        "laravel/fortify": "^1.24.5"
+        "basecodeoy/standards": "^1.1.1",
+        "laravel/fortify": "^1.25.3"
     },
     "minimum-stability": "dev",
     "prefer-stable": true,
